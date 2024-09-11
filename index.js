@@ -13,7 +13,7 @@ const songs = [
     { title: "Orange Moon", artist: "Erykah Badu", genre: "Soul" },
     { title: "Kiss Me More", artist: "Doja Cat", genre: "Pop" },
     { title: "Only Girl In The World", artist: "Rihanna", genre: "Pop" },
-    { title: "DNA", artist: "Kendrick Lamar", genre: "Hip Hop" },
+    { title: "DNA", artist: "Kendrick Lamar", genre: "Hip-Hop" },
     { title: "My Future", artist: "Billie Eillish", genre: "Pop" },
     // Feel free to add even more songs
 ];
@@ -22,7 +22,10 @@ const songs = [
 // Object containing each Guardian's preferred genre
 const guardians = {
     "Star-Lord": "Rock",
-    "Gamora": "Pop",
+    "Gamora": "R&B",
+    "Drax": "Hip-Hop",
+    "Rocket": "Rock",
+    "Groot": "Pop"
     // Add preferences for Drax, Rocket, and Groot
 };
 
