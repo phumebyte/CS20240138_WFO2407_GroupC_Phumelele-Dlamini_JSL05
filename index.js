@@ -10,7 +10,11 @@ const songs = [
     { title: "Ain't No Mountain High Enough", artist: "Marvin Gaye & Tammi Terrell", genre: "R&B" },
     { title: "Come and Get Your Love", artist: "Redbone", genre: "Rock" },
     { title: "I'm Not in Love", artist: "10cc", genre: "Pop" },
-    { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" },
+    { title: "Orange Moon", artist: "Erykah Badu", genre: "Soul" },
+    { title: "Kiss Me More", artist: "Doja Cat", genre: "Pop" },
+    { title: "Only Girl In The World", artist: "Rihanna", genre: "Pop" },
+    { title: "DNA", artist: "Kendrick Lamar", genre: "Hip Hop" },
+    { title: "My Future", artist: "Billie Eillish", genre: "Pop" },
     // Feel free to add even more songs
 ];
 
