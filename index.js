@@ -64,6 +64,7 @@ function displayPlaylists(playlists) {
   
 
 // Call generatePlaylist and display the playlists for each Guardian
-generatePlaylist(guardians, songs);
+let playlists = generatePlaylist(guardians, songs); // assigned the function invocation to a variable because it will be readbale to call the function insode the other function as a variable
+displayPlaylists(playlists);
 
 
