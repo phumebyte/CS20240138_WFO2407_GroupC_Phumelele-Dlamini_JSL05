@@ -41,6 +41,28 @@ function generatePlaylist(guardians, songs) {
       
 }
 
+// Dynamically displaying the playlists
+function displayPlaylists(playlists) {
+    let playlistDiv = document.getElementById('playlists');
+    playlistDiv.innerHTML = ""; // Clear previous content
+  
+    playlists.forEach(playlist => {
+      let guardianDiv = document.createElement('div');
+      guardianDiv.innerHTML = `<h3>${playlist.guardianName}'s Playlist</h3>`;
+  
+      let songList = document.createElement('ul');
+      playlist.playlist.forEach(song => {
+        let songItem = document.createElement('li');
+        songItem.textContent = `${song.title} by ${song.artist}`;
+        songList.appendChild(songItem);
+      });
+  
+      guardianDiv.appendChild(songList);
+      playlistDiv.appendChild(guardianDiv);
+    });
+  }
+  
+
 // Call generatePlaylist and display the playlists for each Guardian
 generatePlaylist(guardians, songs);
 
