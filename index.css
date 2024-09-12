@@ -14,6 +14,14 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for headings */
 }
 
+#playlists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid layout for responsiveness */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    justify-items: center; /* Center grid items */
+}
+
 .playlist {
     margin: 20px;
     padding: 20px; /* Increased padding */
@@ -21,6 +29,13 @@ h1 {
     display: inline-block;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for playlists */
+    width: 100%; /* Make the playlist take full width of its grid container */
+    max-width: 300px; /* Ensure it doesn't become too wide */
+}
+
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding-left: 0; /* Removes default padding */
 }
 
 .song {
@@ -37,3 +52,4 @@ h1 {
     text-decoration: none; /* Remove underline on hover */
     color: #00FF00; /* Green color on hover */
 }
+
