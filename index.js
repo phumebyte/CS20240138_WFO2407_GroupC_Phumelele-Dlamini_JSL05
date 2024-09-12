@@ -9,12 +9,17 @@ const songs = [
     { title: "O-O-H Child", artist: "The Five Stairsteps", genre: "R&B" },
     { title: "Ain't No Mountain High Enough", artist: "Marvin Gaye & Tammi Terrell", genre: "R&B" },
     { title: "Come and Get Your Love", artist: "Redbone", genre: "Rock" },
-    { title: "I'm Not in Love", artist: "10cc", genre: "Pop" },
+    { title: "Hit Em Up", artist: "Tupac", genre: "Hip-Hop" },
     { title: "Orange Moon", artist: "Erykah Badu", genre: "Soul" },
     { title: "Kiss Me More", artist: "Doja Cat", genre: "Pop" },
     { title: "Only Girl In The World", artist: "Rihanna", genre: "Pop" },
     { title: "DNA", artist: "Kendrick Lamar", genre: "Hip-Hop" },
+    { title: "Let's Stay Together", artist: "Al Green", genre: "Soul" },
     { title: "My Future", artist: "Billie Eillish", genre: "Pop" },
+    { title: "When I'm in Your Arms", artist: "Cleo Sol", genre: "Soul" },
+    { title: "Needed Me", artist: "Rihanna", genre: "R&B" },
+    { title: "Snooze", artist: "SZA", genre: "R&B" },
+    { title: "See You Again", artist: "Tyler, the Creator", genre: "Hip-Hop" },
     // Feel free to add even more songs
 ];
 
