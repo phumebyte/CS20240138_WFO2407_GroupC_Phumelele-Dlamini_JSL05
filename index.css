@@ -35,6 +35,11 @@ h1 {
     transform: scale(1.05); 
 }
 
+a {
+    color: #FFD700; /* Gold color for links */
+    text-decoration: none; /* Remove underline */
+}
+
 ul {
     list-style-type: none; 
     padding-left: 0; 

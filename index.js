@@ -25,29 +25,30 @@ const songs = [
 
 // Array of Guardians with their preferred genres
 const guardians = [
-  { name: "Star-Lord", genre: "Soul" },
-  { name: "Gamora", genre: "R&B" },
-  { name: "Drax", genre: "Hip-Hop" },
-  { name: "Rocket", genre: "Rock" },
-  { name: "Groot", genre: "Pop" }
+  { name: "Star-Lord", genre: "Soul", playlistURL: "https://open.spotify.com/playlist/1PXBOIu10tay7JKSSepDEl?si=debae2b9f4c84cd5"  },
+  { name: "Gamora", genre: "R&B", playlistURL: "https://open.spotify.com/playlist/281NSTDGIznIW4NH5E3ZYn?si=82b3be954e1849ea"},
+  { name: "Drax", genre: "Hip-Hop", playlistURL: "https://open.spotify.com/playlist/0NgolBODQaktKsv8q013PI?si=b1e55105e9fd47ea"},
+  { name: "Rocket", genre: "Rock", playlistURL: "https://open.spotify.com/playlist/59OdUUFsPivbX1W1xHi0Oa?si=2deeb187cdd54bd3"},
+  { name: "Groot", genre: "Pop", playlistURL: "https://open.spotify.com/playlist/37MTSlE7h4I5HIe48AVdZa?si=fd2e8844bfd64242"}
 ];
 
 // Function to generate playlist based on each Guardian's preferred genre
 function generatePlaylist(guardians, songs) {
   return guardians.map(guardian => {
       let playlist = songs.filter(song => song.genre === guardian.genre);
-      return { guardianName: guardian.name, playlist: playlist };
+      return { guardianName: guardian.name, playlist: playlist, playlistURL: guardian.playlistURL  };
   });
 }
 
 // Dynamically displaying the playlists
 function displayPlaylists(playlists) {
   let playlistDiv = document.getElementById('playlists');
-  playlistDiv.innerHTML = ""; // Clear previous content
+  playlistDiv.innerHTML = ""; 
 
   playlists.forEach(playlist => {
       let guardianDiv = document.createElement('div');
-      guardianDiv.innerHTML = `<h3>${playlist.guardianName}'s Playlist</h3>`;
+
+      guardianDiv.innerHTML = `<h3><a href="${playlist.playlistURL}" target="_blank">${playlist.guardianName}'s Playlist</a></h3>`
 
       let songList = document.createElement('ul');
       playlist.playlist.forEach(song => {
