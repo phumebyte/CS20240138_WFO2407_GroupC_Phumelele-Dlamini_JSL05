@@ -1,3 +1,7 @@
+##From the Author
+In this submission we used java built in functions to created and filter songs according to the preffered genre. If you love a bit of Pop, you'll love Groot's Playlist. With the use of built-in JavaScript functions, map() and filter(), a playlist is created by filtering through an array of objects (which contains the song title, artist and genre) and selecting all the songs that meet the condition. The guradians and their preferences are stored in another array of objects, the objects containing details of name and music taste). 
+The display makes use of a responsive grid style that shows each playlist as a card with all the music on it. 
+I added special features like a linking the actual playlists to the music, where you can listen to your favourite guardians' playlist!
 # [JSL05] Submission: Galaxy Playlist Generator
 
 You will:
